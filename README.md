@@ -1,6 +1,6 @@
 # chanprobe
 
-Observable bounded queues for Go services.
+Observable bounded in-process queues for Go services.
 
 `chanprobe` is a small Go library for instrumenting important async boundaries:
 worker pools, event pipelines, webhook delivery, background jobs, rate-limited
@@ -15,6 +15,8 @@ visible:
 - Are we dropping work?
 - Which queue introduced latency?
 - When did backpressure start?
+
+Use `chanprobe` when the queue itself is an operational signal.
 
 ## Installation
 
